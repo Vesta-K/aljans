@@ -19,6 +19,11 @@ const menuButtonsName = [
 export default function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
 
+  const handlerCloseNav = () => {
+    if (openNav) {
+      return setOpenNav(false);
+    }
+  };
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -27,17 +32,18 @@ export default function NavbarDefault() {
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row items-center sm:gap-y-10 lg:gap-6 text-[#D5D6D2]">
+    <ul className="h-fit mb-4 mt-4 flex flex-col gap-y-6 lg:mb-0 lg:mt-0 lg:flex-row items-center lg:gap-6 text-[#D5D6D2]">
       {menuButtonsName.map(name => {
         const key = uuidv4();
         return (
           <Link to={Object.keys(name)[0]}>
             <Typography
+              onClick={handlerCloseNav}
               key={key}
               as="li"
               variant="small"
               color="inherit"
-              className="p-1 font-thin text-[18px] xl:text-[20px]  cursor-pointer text-center tracking-wider transform transition duration-200 hover:scale-110 hover:bg-radialGrad"
+              className="p-1 font-thin text-[22px] xl:text-[20px]  cursor-pointer text-center tracking-wider transform transition duration-200 hover:scale-110 hover:bg-radialGrad"
             >
               {Object.values(name)}
             </Typography>
@@ -97,10 +103,7 @@ export default function NavbarDefault() {
           )}
         </IconButton>
       </div>
-      <Collapse
-        open={openNav}
-        className="isolate h-fit flex flex-col items-center"
-      >
+      <Collapse open={openNav} className="h-fit flex flex-col items-center">
         {navList}
       </Collapse>
     </Navbar>

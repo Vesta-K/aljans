@@ -19,6 +19,8 @@ export default withMT({
         regular: ["gteestiRegular"],
       },
       backgroundImage: {
+        "hero-pattern":
+          'linear-gradient(0deg, #2F2E33 0%, rgba(47, 46, 51, 0) 100%), url("./Images/537bcd9d7a68711989a5cff4c4c65716.jpg")',
         radialGrad:
           "radial-gradient(closest-side, rgba(255, 255, 255, 0.09) 2.5947827845811844%, rgba(255, 255, 255, 0) 100%)",
       },
