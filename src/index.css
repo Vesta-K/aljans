@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "gteestiThin";
+  src: url("/src/assets/fonts/gteestiprodisplay_thin.otf");
+}
+@font-face {
+  font-family: "gteestiUltraBold";
+  src: url("/src/assets/fonts/gteestiprodisplay_ultrabold.otf");
+}
+@font-face {
+  font-family: "gteestiBold";
+  src: url("/src/assets/fonts/gteestiprodisplay_bold.otf");
+}
+@font-face {
+  font-family: "gteestiLight";
+  src: url("/src/assets/fonts/gteestiprodisplay_light.otf");
+}
+@font-face {
+  font-family: "gteestiMedium";
+  src: url("/src/assets/fonts/gteestiprodisplay_medium.otf");
+}
+@font-face {
+  font-family: "gteestiRegular";
+  src: url("/src/assets/fonts/gteestiprodisplay_regular.otf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #2f2e33;
+}
