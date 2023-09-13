@@ -1,4 +1,4 @@
-import { Button, Link } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function Hero() {
   return (
@@ -18,13 +18,15 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center pt-28 md:flex-row md:gap-x-28 md:gap-x gap-y-10 ">
-          <div
-            className="font-thin w-48 h-10 tracking-wide bg-[#3A5199] text-[#D5D6D2] flex items-center justify-center transition duration-200
+          <Link to="calculator">
+            <div
+              className="font-thin w-48 h-10 tracking-wide bg-[#3A5199] text-[#D5D6D2] flex items-center justify-center transition duration-200
     hover:bg-[#D5D6D2]
     hover:text-[#3A5199]"
-          >
-            Рассчитать стоимость
-          </div>
+            >
+              Рассчитать стоимость
+            </div>
+          </Link>
           <div
             className="font-thin w-48 h-10 tracking-wide bg-[#3A5199] text-[#D5D6D2] flex items-center justify-center transition duration-200
     hover:bg-[#D5D6D2]
