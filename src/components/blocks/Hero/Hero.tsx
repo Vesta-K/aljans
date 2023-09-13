@@ -2,7 +2,13 @@ import { Link } from "react-scroll";
 
 export default function Hero() {
   return (
-    <div className="relative isolate flex justify-center items-center h-screen pt-28 px-8 bg-cover bg-center bg-hero-pattern">
+    <div
+      style={{
+        backgroundImage:
+          "linear-gradient(0deg, #2F2E33 0%, rgba(47, 46, 51, 0) 100%), url('./Images/537bcd9d7a68711989a5cff4c4c65716.jpg')",
+      }}
+      className="relative isolate flex justify-center items-center h-screen pt-26 px-4 bg-cover bg-center"
+    >
       <div className="mx-auto max-w-full">
         <div className="space-y-5 flex-col justify-center items-center">
           <div className="text-center space-y-4 ">
@@ -20,7 +26,7 @@ export default function Hero() {
         <div className="flex flex-col items-center justify-center pt-28 md:flex-row md:gap-x-28 md:gap-x gap-y-10 ">
           <Link to="calculator">
             <div
-              className="font-thin w-48 h-10 tracking-wide bg-[#3A5199] text-[#D5D6D2] flex items-center justify-center transition duration-200
+              className="font-thin w-48 h-11 tracking-wide bg-[#3A5199] text-[#D5D6D2] flex items-center justify-center transition duration-200
     hover:bg-[#D5D6D2]
     hover:text-[#3A5199]"
             >
@@ -28,7 +34,7 @@ export default function Hero() {
             </div>
           </Link>
           <div
-            className="font-thin w-48 h-10 tracking-wide bg-[#3A5199] text-[#D5D6D2] flex items-center justify-center transition duration-200
+            className="font-thin w-48 h-11 tracking-wide bg-[#3A5199] text-[#D5D6D2] flex items-center justify-center transition duration-200
     hover:bg-[#D5D6D2]
     hover:text-[#3A5199]"
           >

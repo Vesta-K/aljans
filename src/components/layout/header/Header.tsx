@@ -6,7 +6,6 @@ import {
 } from "@material-tailwind/react";
 import React from "react";
 import { Link } from "react-scroll";
-import { v4 as uuidv4 } from "uuid";
 
 const menuButtonsName = [
   { modulTowers: "Модульные здания" },
@@ -34,12 +33,10 @@ export default function NavbarDefault() {
   const navList = (
     <ul className="h-fit mb-4 mt-4 flex flex-col gap-y-6 lg:mb-0 lg:mt-0 lg:flex-row items-center lg:gap-6 text-[#D5D6D2]">
       {menuButtonsName.map(name => {
-        const key = uuidv4();
         return (
           <Link to={Object.keys(name)[0]}>
             <Typography
               onClick={handlerCloseNav}
-              key={key}
               as="li"
               variant="small"
               color="inherit"
