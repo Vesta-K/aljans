@@ -34,7 +34,7 @@ export default function NavbarDefault() {
     <ul className="h-fit mb-4 mt-4 flex flex-col gap-y-6 lg:mb-0 lg:mt-0 lg:flex-row items-center lg:gap-6 text-[#D5D6D2]">
       {menuButtonsName.map(name => {
         return (
-          <Link to={Object.keys(name)[0]}>
+          <Link to={Object.keys(name)[0]} smooth={true}>
             <Typography
               onClick={handlerCloseNav}
               as="li"
@@ -53,7 +53,7 @@ export default function NavbarDefault() {
   return (
     <Navbar className="fixed top-0 z-10 border-none h-max max-w-full bg-[rgba(47,46,51,0.90)] rounded-none py-2 px-4 lg:px-8 lg:py-4">
       <div className="flex items-center justify-between">
-        <Link to="hero">
+        <Link to="hero" smooth="true">
           <img
             src="Images/LogoWhite.png"
             className="w-[180px] cursor-pointer"

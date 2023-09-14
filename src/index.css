@@ -23,6 +23,17 @@
   src: url("/src/assets/fonts/gteestiprodisplay_regular.otf");
 }
 
+:root {
+  --swiper-theme-color: #ffffff !important;
+}
+
+.swiper-button-prev:hover {
+  transform: scale(1.05);
+}
+.swiper-button-next:hover {
+  transform: scale(1.2);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

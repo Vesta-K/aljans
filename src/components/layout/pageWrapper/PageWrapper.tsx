@@ -1,11 +1,11 @@
 import NavbarDefault from "../header/Header";
-import Hero from "../../blocks/Hero/Hero";
+import MainPage from "../../pages/mainPage/MainPage";
 
 export default function PageWrapper() {
   return (
     <>
       <NavbarDefault />
-      <Hero />
+      <MainPage />
     </>
   );
 }

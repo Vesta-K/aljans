@@ -10,6 +10,9 @@ export default withMT({
   ],
   theme: {
     extend: {
+      colors: {
+        "base-gray": "#D5D6D2",
+      },
       fontFamily: {
         thin: ["gteestiThin"],
         ultraBold: ["gteestiUltraBold"],
