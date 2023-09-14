@@ -9,7 +9,7 @@ export default function UsProjects() {
   return (
     <div
       id="usProjects"
-      className="h-screen relative flex flex-col justify-center items-center xl:pt-10 gap-y-8"
+      className=" h-screen relative flex flex-col justify-center items-center xl:pt-10 gap-y-8"
     >
       <Typography
         as="h2"
@@ -36,7 +36,7 @@ export default function UsProjects() {
             key={index}
             className="bg-cover bg-center bg-no-repeat"
           >
-            <div className="h-full p-10 flex flex-col justify-end gap-y-5 text-left md:text-left md:gap-y-10">
+            <div className="h-full p-10 flex flex-col justify-end gap-y-5 text-center md:text-left md:gap-y-10">
               <Typography
                 as="h1"
                 data-swiper-parallax="-400"

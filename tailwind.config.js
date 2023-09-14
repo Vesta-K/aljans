@@ -12,6 +12,7 @@ export default withMT({
     extend: {
       colors: {
         "base-gray": "#D5D6D2",
+        "base-zinc": "#3A5199",
       },
       fontFamily: {
         thin: ["gteestiThin"],

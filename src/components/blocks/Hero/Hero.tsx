@@ -9,7 +9,7 @@ export default function Hero() {
         backgroundImage:
           "linear-gradient(0deg, #2F2E33 0%, rgba(47, 46, 51, 0) 100%), url('./Images/537bcd9d7a68711989a5cff4c4c65716.jpg')",
       }}
-      className="relative isolate flex justify-center items-center h-screen pt-28 px-4 bg-cover bg-center"
+      className="relative flex justify-center items-center h-screen pt-28 px-4 bg-cover bg-center"
     >
       <div className="mx-auto max-w-full">
         <div className="space-y-5 flex-col justify-center items-center">
