@@ -13,7 +13,7 @@ export default function UsProjects() {
     >
       <Typography
         as="h2"
-        className="font-regular text-4xl sm:text-5xl md:text-6xl text-center text-base-gray"
+        className="font-thin text-4xl mb-10 sm:text-5xl md:text-6xl text-center text-base-gray"
       >
         Наши проекты
       </Typography>
