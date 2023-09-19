@@ -16,11 +16,11 @@ export default function Modal({
     >
       <form
         onClick={e => e.stopPropagation()}
-        className="relative w-11/12 max-w-[600px] h-[270px]  bg-[#2f2e33] flex flex-col justify-around items-center p-6 gap-4 shadow-[0px_0px_56px_-2px_#7b8abb]"
+        className="relative w-11/12 max-w-[600px] h-[270px] m-5 bg-[#2f2e33] flex flex-col justify-around items-center p-6 gap-4 shadow-[0px_0px_56px_-2px_#7b8abb]"
       >
         <Typography
           as="h2"
-          className="font-thin text-md  text-white md:text-2xl"
+          className="font-thin text-md  text-white text-center md:text-2xl"
         >
           Мы вам перезвоним через несколько минут!
         </Typography>
@@ -37,15 +37,15 @@ export default function Modal({
           color="white"
           crossOrigin={undefined}
         />
-        <div className="w-full flex flex-row justify-center gap-x-20">
+        <div className="w-full flex flex-row justify-center gap-x-5">
           <button
-            className="font-thin text-base-gray flex items-center justify-center w-1/4 h-9 bg-base-zinc"
+            className="font-thin text-base-gray flex items-center justify-center w-1/4 min-w-[110px] h-9 bg-base-zinc"
             onClick={onClose}
           >
             Отмена
           </button>
           <button
-            className="font-thin text-base-gray flex items-center justify-center w-1/4 h-9 bg-base-zinc"
+            className="font-thin text-base-gray flex items-center justify-center w-1/4 min-w-[110px] h-9 bg-base-zinc"
             onClick={onClose}
           >
             Отправить
