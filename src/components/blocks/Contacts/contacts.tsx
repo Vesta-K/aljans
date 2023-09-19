@@ -6,7 +6,7 @@ export default function Contacts() {
       <figure className="relative w-full lg:w-2/6 ultraXl:w-2/6 h-20 ultraXl:h-28 lg:pt-0.5 lg:pr-8 flex justify-center lg:justify-end items-center bg-base-zinc">
         <Typography
           as="h1"
-          className="font-thin text-base-gray text-6xl ultraXl:text-7xl"
+          className="font-regular text-base-gray text-6xl ultraXl:text-7xl"
         >
           Контакты
         </Typography>
@@ -39,7 +39,7 @@ export default function Contacts() {
               as="a"
               className="font-thin text-2xl md:text-3xl ultraXl:text-5xl text-base-gray"
             >
-              sk_alliance@bk.ru{" "}
+              sk_alliance@bk.ru
             </Typography>
           </div>
           <div className="flex flex-col gap-10">

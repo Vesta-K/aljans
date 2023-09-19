@@ -1,7 +1,7 @@
 import { Button, Typography } from "@material-tailwind/react";
 import { useState } from "react";
 import { Parallax } from "react-scroll-parallax";
-import ModalCallback from "../../ui/modalCallback";
+import Modal from "../../ui/modal";
 
 export default function Hero() {
   const [open, setOpen] = useState(false);
@@ -17,7 +17,7 @@ export default function Hero() {
       }}
       className="relative flex justify-center items-center h-screen pt-28 px-4 bg-cover bg-center"
     >
-      <div className="mx-auto max-w-full ultraXl:space-y-44">
+      <div className="mx-auto max-w-full ultraXl:space-y-36">
         <div className="space-y-5 flex-col justify-center items-center">
           <Parallax speed={-10}>
             <div className="text-center space-y-4">
@@ -45,21 +45,21 @@ export default function Hero() {
         <Parallax speed={-6}>
           <div className="flex flex-col items-center justify-center pt-28 md:flex-row md:gap-x-28 gap-y-10 ultraXl:gap-x-44 ">
             <Button
-              className="font-thin rounded-none text-[14px] ultraXl:text-[16px] w-52 h-11 p-0 ultraXl:w-64 ultraXl:h-16 tracking-wide bg-[#3A5199] text-[#D5D6D2] text-center transition duration-200
+              className="font-regular rounded-none rounded-tr-xl rounded-bl-xl text-[14px] ultraXl:text-[18px] w-52 h-11 p-0 ultraXl:w-72 ultraXl:h-14 tracking-wide ultraXl:tracking-wider bg-[#3A5199] text-[#D5D6D2] text-center transition duration-200
     hover:bg-[#D5D6D2]
     hover:text-[#3A5199]"
             >
               Рассчитать стоимость
             </Button>
             <Button
-              className="font-thin rounded-none text-[14px] ultraXl:text-[16px] w-52 h-11  ultraXl:w-64 ultraXl:h-16 tracking-wide bg-[#3A5199] text-[#D5D6D2] text-center transition duration-200
+              className="font-regular rounded-none rounded-tr-xl rounded-bl-lg text-[14px] ultraXl:text-[18px] w-52 h-11 p-0 ultraXl:w-72 ultraXl:h-14 tracking-wide ultraXl:tracking-wider bg-[#3A5199] text-[#D5D6D2] text-center transition duration-200
     hover:bg-[#D5D6D2]
     hover:text-[#3A5199]"
               onClick={handleOpen}
             >
               Обратный звонок
             </Button>
-            <ModalCallback open={open} handleOpen={handleOpen} />
+            <Modal isOpen={open} onClose={handleOpen}></Modal>
           </div>
         </Parallax>
       </div>
