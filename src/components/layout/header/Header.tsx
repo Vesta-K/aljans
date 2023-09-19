@@ -6,6 +6,7 @@ import {
 } from "@material-tailwind/react";
 import React from "react";
 import { Link } from "react-scroll";
+import { v4 as uuidv4 } from "uuid";
 
 const menuButtonsName = [
   { modulTowers: "Модульные здания" },
@@ -36,11 +37,13 @@ export default function NavbarDefault() {
         return (
           <Link to={Object.keys(name)[0]} smooth={true}>
             <Typography
+              id={uuidv4()}
+              key={uuidv4()}
               onClick={handlerCloseNav}
               as="li"
               variant="small"
               color="inherit"
-              className="p-1 font-thin text-[22px] xl:text-[20px]  cursor-pointer text-center tracking-wider transform transition duration-200 hover:scale-110 hover:bg-radialGrad"
+              className="p-1 font-thin text-[22px] xl:text-[20px] ultraXl:text-[28px] cursor-pointer text-center tracking-wider transform transition duration-200 hover:scale-110 hover:bg-radialGrad"
             >
               {Object.values(name)}
             </Typography>
@@ -51,12 +54,12 @@ export default function NavbarDefault() {
   );
 
   return (
-    <Navbar className="fixed top-0 z-10 border-none rounded-none h-max max-w-full bg-[rgba(47,46,51,0.90)] py-2 px-4 lg:px-8 lg:py-4">
-      <div className="flex items-center justify-between">
+    <Navbar className="fixed top-0 z-10 border-none rounded-none h-max ultraXl:h-24 max-w-full bg-[rgba(47,46,51,0.90)] py-2 px-4 lg:px-8 lg:py-4">
+      <div className="h-full flex items-center justify-between">
         <Link to="hero" smooth="true">
           <img
             src="Images/LogoWhite.png"
-            className="w-[180px] cursor-pointer"
+            className="w-[180px] ultraXl:w-52 cursor-pointer"
           />
         </Link>
         <div className="flex items-center gap-4">

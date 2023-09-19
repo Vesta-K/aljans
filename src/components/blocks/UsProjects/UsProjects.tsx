@@ -9,11 +9,11 @@ export default function UsProjects() {
   return (
     <div
       id="usProjects"
-      className=" h-screen relative flex flex-col justify-center items-center xl:pt-10 gap-y-8"
+      className=" h-screen relative flex flex-col justify-between items-center xl:pt-10 gap-y-8"
     >
       <Typography
         as="h2"
-        className="font-thin text-4xl mb-10 sm:text-5xl md:text-6xl text-center text-base-gray"
+        className="font-thin text-4xl mt-24 md:mt-20 sm:text-5xl md:text-6xl text-center text-base-gray ultraXl:text-7xl"
       >
         Наши проекты
       </Typography>
@@ -26,7 +26,7 @@ export default function UsProjects() {
         }}
         navigation={true}
         modules={[Parallax, Pagination, Navigation]}
-        className="w-full h-3/4"
+        className="w-full h-[80%]"
       >
         {projects.map(({ index, title, image, smallDescription }) => (
           <SwiperSlide
@@ -36,18 +36,18 @@ export default function UsProjects() {
             key={index}
             className="bg-cover bg-center bg-no-repeat"
           >
-            <div className="h-full p-10 flex flex-col justify-end gap-y-5 text-center md:text-left md:gap-y-10">
+            <div className="h-full px-10 md:p-10 flex flex-col justify-end gap-y-5 text-center md:text-left md:gap-y-10">
               <Typography
                 as="h1"
                 data-swiper-parallax="-400"
-                className="font-ultraBold text-base-gray text-5xl md:text-7xl lg:text-8xl bg-gradient-to-r from-[#D5D6D2] to-[#3A5199] bg-clip-text text-transparent"
+                className="font-ultraBold text-base-gray text-5xl md:text-7xl lg:text-8xl ultraXl:text-[200px] bg-gradient-to-r from-[#D5D6D2] to-[#3A5199] bg-clip-text text-transparent"
               >
                 {title}
               </Typography>
               <Typography
                 as="p"
                 variant="paragraph"
-                className="font-thin text-xl md:text-2xl lg:text-3xl text-base-gray"
+                className="font-thin text-xl md:text-2xl lg:text-3xl ultraXl:text-[50px] ultraXl:leading-normal text-base-gray"
                 data-swiper-parallax="-200"
               >
                 {smallDescription}
