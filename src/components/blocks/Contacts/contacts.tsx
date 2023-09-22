@@ -1,4 +1,5 @@
 import { Typography } from "@material-tailwind/react";
+import { YMaps, Map } from "@pbe/react-yandex-maps";
 
 export default function Contacts() {
   return (
@@ -51,7 +52,8 @@ export default function Contacts() {
             </Typography>
             <Typography
               as="a"
-              className="font-thin text-2xl md:text-3xl ultraXl:text-5xl text-base-gray"
+              href="https://yandex.ru/maps/-/CDUfaD6K"
+              className="font-thin underline underline-offset-8 decoration-solid text-2xl md:text-3xl ultraXl:text-5xl text-base-gray hover:text-base-zinc"
             >
               344056, г. Ростов-на-Дону, пер. Иртышский, №50
             </Typography>
@@ -78,6 +80,12 @@ export default function Contacts() {
               "linear-gradient(180deg, #2F2E33 1%, rgba(47, 46, 51, 0) 80%), linear-gradient(180deg, #2F2E33 1%, rgba(47, 46, 51, 0) 80%), linear-gradient(90deg, #2F2E33 1%, rgba(47, 46, 51, 0) 80%), linear-gradient(135deg, #2F2E33 1%, rgba(47, 46, 51, 0) 50%), url(Images/map.png)",
           }}
         ></div>
+        <YMaps query={{ apikey: "3393c833-d9af-455e-aeac-c97893c9816d" }}>
+          <Map
+            className="w-screen h-96"
+            defaultState={{ center: [55.751574, 37.573856], zoom: 9 }}
+          />
+        </YMaps>
       </section>
     </div>
   );

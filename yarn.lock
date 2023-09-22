@@ -548,6 +548,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@pbe/react-yandex-maps@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@pbe/react-yandex-maps/-/react-yandex-maps-1.2.4.tgz#fe3cbc43f018e73878be01c1cd2d8758ef1464b9"
+  integrity sha512-3VL5wd92cinLUnkOqbsk27lAEqKrJBP+XmmbZK3L9trwUYbO2U5n/dlJiqHplYQQb6MnZlnWwZA6h8ZBQ/FsWg==
+  dependencies:
+    "@types/yandex-maps" "2.1.29"
+
 "@types/json-schema@^7.0.12":
   version "7.0.12"
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.12.tgz"
@@ -595,6 +602,11 @@
   version "8.3.4"
   resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.4.tgz#bd86a43617df0594787d38b735f55c805becf1bc"
   integrity sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==
+
+"@types/yandex-maps@2.1.29":
+  version "2.1.29"
+  resolved "https://registry.yarnpkg.com/@types/yandex-maps/-/yandex-maps-2.1.29.tgz#88dba8d99a4a05c6bf6d7fbc36c78e891ef30d38"
+  integrity sha512-nuibRWj3RU/9KXlCzTrRtDE+n6V9l7NbT9JakicqZ5OXIdwyb6blvV2Uwn6lB58WYm3DSUDP2I2AWlnWMc8z2w==
 
 "@typescript-eslint/eslint-plugin@^6.0.0":
   version "6.7.0"
@@ -1812,6 +1824,11 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
+remote-script-loader@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/remote-script-loader/-/remote-script-loader-1.0.3.tgz#21da41923186869a72a32b35f5bd6ccc3d105686"
+  integrity sha512-Ugw/rD3Tz3YlEFp/qxYz0qLxX0BAf3NtuQct31jyv8u9qdC+AB7J68n9R96lnPETQ5obY6pT6GEE2IGowiIkTw==
+
 resolve-from@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/resolve-from/-/resolve-from-4.0.0.tgz"
@@ -2126,6 +2143,13 @@ yaml@^2.1.1:
   version "2.3.2"
   resolved "https://registry.npmjs.org/yaml/-/yaml-2.3.2.tgz"
   integrity sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg==
+
+ymaps-loader@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/ymaps-loader/-/ymaps-loader-1.0.6.tgz#9538ee4da355658dc7f25cef856cf0785aa60a0f"
+  integrity sha512-7cBo3KkGJ55Nb3Gnlfbx8fDi+OF5qQzPEIXBioLWn8URug7DRVDjNROHzPcKFk2K5BONi43HXaPZmc0Q+Z6ZNw==
+  dependencies:
+    remote-script-loader "^1.0.3"
 
 yocto-queue@^0.1.0:
   version "0.1.0"
