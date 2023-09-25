@@ -34,7 +34,9 @@ body {
 :root {
   --swiper-theme-color: #ffffff !important;
 }
-
+.ymaps-2-1-79-ground-pane {
+  filter: invert(0.9);
+}
 .swiper-button-prev:hover {
   transform: scale(1.05);
 }
