@@ -1,17 +1,17 @@
 import socialMedia from "../../../content/SocialMedia";
 import { Typography } from "@material-tailwind/react";
-import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
 export default function Footer() {
   return (
     <footer className="relative p-6 flex flex-col gap-y-1  justify-between items-center">
-      <Link to="hero" smooth="true">
+      <NavLink to="/aljans/">
         <img
           src="Images/LogoWhite.png"
           className="w-[180px] ultraXl:w-80 cursor-pointer"
         />
-      </Link>
+      </NavLink>
       <hr className="my-8 w-2/4 border-base-gray opacity-20 " />
       <div className="flex flex-row gap-6">
         {socialMedia.map(item => (
