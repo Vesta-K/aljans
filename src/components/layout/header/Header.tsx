@@ -5,7 +5,7 @@ import {
   Collapse,
 } from "@material-tailwind/react";
 import React from "react";
-import { Link } from "react-scroll";
+import { Link, scroller } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
@@ -51,7 +51,12 @@ export default function NavbarDefault() {
         return (
           <Link key={uuidv4()} to={Object.keys(name)[0]} smooth={true}>
             <Typography
-              onClick={handlerCloseNav}
+              onClick={() => {
+                handlerCloseNav();
+                setTimeout(() => {
+                  scroller.scrollTo(Object.keys(name)[0], { smooth: true });
+                });
+              }}
               as="p"
               variant="small"
               color="inherit"
@@ -72,7 +77,7 @@ export default function NavbarDefault() {
           <NavLink to="/aljans/">
             <img
               src="Images/LogoWhite.png"
-              className="w-[180px] ultraXl:w-52 cursor-pointer"
+              className="w-[150px] ultraXl:w-52 cursor-pointer"
             />
           </NavLink>
         </Link>

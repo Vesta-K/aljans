@@ -32,7 +32,7 @@ export default function Footer() {
         <Typography
           as="a"
           href="#"
-          className="font-thin text-xl ultraXl:text-3xl text-base-gray"
+          className="font-thin text-xl text-center ultraXl:text-3xl text-base-gray"
         >
           Политика конфиденциальности
         </Typography>
